@@ -11,7 +11,7 @@
 
 ## Projects
 
-### [TP1 - ThreeJS Basics](tp1)
+### [TP1 - ThreeJS Basics](Proj1)
 
 <!-- (items briefly describing main strong points) -->
 #### Items:
@@ -23,11 +23,11 @@
   <!-- (Brief description of the created scene) -->
   - Description: Living room with diverse components displayed, such as: window with a dynamic background landscape, three paintings hanging on the walls, two of them portraiting the group members and the third one displaying a "beetle" car created using only cubic curbs, a carpet, a chair, a table, three lamps on top of each painting and two more: one being on the ceiling and another one placed on the table. Then it's possible to visualize multiple objects placed on top of the table such as: a cake platter with a sliced cake on top of it, a knife, a plate with a slice of the cake on top of it, a metal spring, a newspaper placed in front of the chair and finally a jar with a flower inside it.
   <!-- (relative link to the scene) -->
-  - [Scene](./tp1/index.html)
+  - [Scene](./Proj1/index.html)
 
-  ![Scene Screenshot 1](./tp1/screenshots/Scene_Screenshot1.png)
+  ![Scene Screenshot 1](./Proj1/screenshots/Scene_Screenshot1.png)
   
-  ![Scene Screenshot 2](./tp1/screenshots/Scene_Screenshot2.png)
+  ![Scene Screenshot 2](./Proj1/screenshots/Scene_Screenshot2.png)
 
 #### Controls
 
@@ -39,15 +39,15 @@ For the light controls, most lights can be altered in almost all variables. Most
 
 As for the plane texture, you can customize the texture itself and the color and shininess of the object.
 
-  ![GUI 1](./tp1/screenshots/Controls1.png)
+  ![GUI 1](./Proj1/screenshots/Controls1.png)
 
-  ![GUI 2](./tp1/screenshots/Controls2.png)
+  ![GUI 2](./Proj1/screenshots/Controls2.png)
 
-  ![GUI 3](./tp1/screenshots/Controls3.png)
+  ![GUI 3](./Proj1/screenshots/Controls3.png)
 
 ----
 
-### [TP2 - Parser](tp2)
+### [TP2 - Parser](Proj2)
 
 <!-- (items briefly describing main strong points) -->
 #### Items:
@@ -60,9 +60,9 @@ As for the plane texture, you can customize the texture itself and the color and
 <!-- (Brief description of the created scene) -->
 For our tp2 scene we decided to create a gym, with a treadmill, a bench press, some dumbbells, weight disks, a TV, some polygons emulating a symbol made of LED panels, a partition with a transparent glass and door to separate a swimming pool from the rest of the gym.
 
-![Swimming Pool](./tp2/screenshots/image1.png)
+![Swimming Pool](./Proj2/screenshots/image1.png)
 
-![Gym](./tp2/screenshots/image2.png)
+![Gym](./Proj2/screenshots/image2.png)
 
 #### Controls:
 
@@ -74,7 +74,7 @@ For the lights, you can also enable/disable, chang color, intensity and position
 
 There is also an option to enable all objects' wireframe.
 
-![Controls](./tp2/screenshots/controls.png)
+![Controls](./Proj2/screenshots/controls.png)
 
-### [TP3 - ...](tp3)
+### [TP3 - ...](Proj3)
 - (items briefly describing main strong points)
