@@ -1,0 +1,4706 @@
+{
+    "yasf": {
+        "globals": {
+            "background": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            },
+            "ambient": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "intensity": 4.0
+            },
+            "fog": {
+                "color": {
+                    "r": 0.6,
+                    "g": 0.6,
+                    "b": 0.6
+                },
+                "near": 30.0,
+                "far": 150.0
+            },
+            "skybox": {
+                "size": {
+                    "x": 165.0,
+                    "y": 45.0,
+                    "z": 70.0
+                },
+                "center": {
+                    "x": 27.5,
+                    "y": 22.49,
+                    "z": 0.0
+                },
+                "emissive": {
+                    "r": 0.8,
+                    "g": 0.5,
+                    "b": 0.2
+                },
+                "intensity": 2.0,
+                "front": "scenes/scene/textures/white_bricks.jpg",
+                "back": "scenes/scene/textures/white_bricks.jpg",
+                "up": "scenes/scene/textures/white_paint.jpg",
+                "down": "scenes/scene/textures/grey_concrete.jpg",
+                "left": "scenes/scene/textures/white_bricks.jpg",
+                "right": "scenes/scene/textures/white_bricks.jpg"
+            }
+        },
+        "textures": {
+            "matte_black_metal_tex": {
+                "filepath": "scenes/scene/textures/black_matte.jpg",
+                "isVideo": false
+            },
+            "brown_leather_tex": {
+                "filepath": "scenes/scene/textures/brown_leather.jpg",
+                "isVideo": false
+            },
+            "grey_concrete_tex": {
+                "filepath": "scenes/scene/textures/grey_concrete.jpg",
+                "isVideo": false
+            },
+            "grey_concrete_bumper_tex": {
+                "filepath": "scenes/scene/textures/grey_concrete_bumper.jpg",
+                "isVideo": false
+            },
+            "gym_mat_tex": {
+                "filepath": "scenes/scene/textures/gym_mat.jpg",
+                "isVideo": false
+            },
+            "gym_mat_bumper_tex": {
+                "filepath": "scenes/scene/textures/gym_mat_bumper.jpg",
+                "isVideo": false
+            },
+            "metal_tex": {
+                "filepath": "scenes/scene/textures/metal.jpg",
+                "isVideo": false
+            },
+            "metal_specular_tex": {
+                "filepath": "scenes/scene/textures/metal_specular.jpg",
+                "isVideo": false
+            },
+            "water_tex": {
+                "filepath": "scenes/scene/videos/water.mp4",
+                "isVideo": true
+            },
+            "basalt_tex": {
+                "filepath": "scenes/scene/textures/basalt.jpg",
+                "isVideo": false
+            },
+            "beige_marble_tex": {
+                "filepath": "scenes/scene/textures/beige_marble.jpg",
+                "isVideo": false
+            },
+            "beige_marble_bumper_tex": {
+                "filepath": "scenes/scene/textures/beige_marble_bumper.jpg",
+                "isVideo": false
+            },
+            "white_bricks_tex": {
+                "filepath": "scenes/scene/textures/white_bricks.jpg",
+                "isVideo": false
+            },
+            "white_bricks_bumper_tex": {
+                "filepath": "scenes/scene/textures/white_bricks_bumper.jpg",
+                "isVideo": false
+            },
+            "basalt_bumper_tex":{
+                "filepath": "scenes/scene/textures/basalt_bumper.jpg",
+                "isVideo": false
+            },
+            "basalt_specular_tex":{
+                "filepath": "scenes/scene/textures/basalt_specular.jpg",
+                "isVideo": false
+            },
+            "rubber_tex": {
+                "filepath": "scenes/scene/textures/rubber.jpg",
+                "isVideo": false
+            },
+            "rubber_bumper_tex": {
+                "filepath": "scenes/scene/textures/rubber_bumper.jpg",
+                "isVideo": false
+            },
+            "television_wallpaper_tex": {
+                "filepath": "scenes/scene/textures/wallpaper_2k.jpg",
+                "isVideo": false,
+                "mipmap0": "scenes/scene/textures/wallpaper_2k.jpg",
+                "mipmap1": "scenes/scene/textures/wallpaper_1k.jpg",
+                "mipmap2": "scenes/scene/textures/wallpaper_512.jpg",
+                "mipmap3": "scenes/scene/textures/wallpaper_256.jpg",
+                "mipmap4": "scenes/scene/textures/wallpaper_128.jpg",
+                "mipmap5": "scenes/scene/textures/wallpaper_64.jpg",
+                "mipmap6": "scenes/scene/textures/wallpaper_32.jpg"
+            },
+            "treadmill_console_tex": {
+                "filepath": "scenes/scene/textures/treadmill_console.jpg",
+                "isVideo": false
+            }
+        },
+        "materials": {
+            "rubber": {
+                "color": {
+                    "r": 0.01,
+                    "g": 0.01,
+                    "b": 0.01
+                },
+                "shininess": 10.0,
+                "specular": {
+                    "r": 0.01,
+                    "g": 0.01,
+                    "b": 0.01
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "rubber_tex",
+                "texlength_s": 1.0,
+                "texlength_t": 1.0,
+                "bumpref": "rubber_bumper_tex",
+                "bumpscale": 0.01
+            },
+            "gym_mat": {
+                "color": {
+                    "r": 0.01,
+                    "g": 0.01,
+                    "b": 0.01
+                },
+                "shininess": 1.0,
+                "specular": {
+                    "r": 0.05,
+                    "g": 0.05,
+                    "b": 0.05
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "gym_mat_tex",
+                "texlength_s": 1.5,
+                "texlength_t": 1.0,
+                "bumpref": "gym_mat_bumper_tex",
+                "bumpscale": 0.5
+            },
+            "metal": {
+                "color": {
+                    "r": 0.753,
+                    "g": 0.753,
+                    "b": 0.753
+                },
+                "shininess": 100.0,
+                "specular": {
+                    "r": 0.9,
+                    "g": 0.9,
+                    "b": 0.9
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "metal_tex",
+                "texlength_s": 1.0,
+                "texlength_t": 1.0,
+                "specularref": "metal_specular_tex",
+                "specularscale": 0.1
+            },
+            "matte_black_metal": {
+                "color": {
+                    "r": 0.01,
+                    "g": 0.01,
+                    "b": 0.01
+                },
+                "shininess": 10.0,
+                "specular": {
+                    "r": 0.05,
+                    "g": 0.05,
+                    "b": 0.05
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "matte_black_metal_tex",
+                "texlength_s": 1.0,
+                "texlength_t": 1.0
+            },
+            "brown_leather": {
+                "color": {
+                    "r": 0.5922,
+                    "g": 0.3412,
+                    "b": 0.1686
+                },
+                "shininess": 5.0,
+                "specular": {
+                    "r": 0.3,
+                    "g": 0.2,
+                    "b": 0.1
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "brown_leather_tex",
+                "texlength_s": 1.0,
+                "texlength_t": 1.0
+            },
+            "yellow_plastic": {
+                "color": {
+                    "r": 0.85,
+                    "g": 0.77,
+                    "b": 0.25
+                },
+                "shininess": 60.0,
+                "specular": {
+                    "r": 0.9,
+                    "g": 0.9,
+                    "b": 0.5
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": false,
+                "opacity": 1.0
+            },
+            "concrete": {
+                "color": {
+                    "r": 0.5,
+                    "g": 0.5,
+                    "b": 0.5
+                },
+                "shininess": 5.0,
+                "specular": {
+                    "r": 0.1,
+                    "g": 0.1,
+                    "b": 0.1
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "grey_concrete_tex",
+                "texlength_s": 20.0,
+                "texlength_t": 20.0,
+                "bumpref": "grey_concrete_bumper_tex",
+                "bumpscale": 0.8
+            },
+            "dark_grey_tinted_glass": {
+                "color": {
+                    "r": 0.2,
+                    "g": 0.2,
+                    "b": 0.2
+                },
+                "shininess": 100.0,
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": true,
+                "opacity": 0.55,
+                "twosided": true
+            },
+            "basalt": {
+                "color": {
+                    "r": 0.1,
+                    "g": 0.1,
+                    "b": 0.1
+                },
+                "shininess": 3.0,
+                "specular": {
+                    "r": 0.05,
+                    "g": 0.05,
+                    "b": 0.05
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "basalt_tex",
+                "texlength_s": 7.23,
+                "texlength_t": 20.0,
+                "bumpref": "basalt_bumper_tex",
+                "bumpscale": 1.0,
+                "specularref": "basalt_specular_tex"
+            },
+            "water": {
+                "color": {
+                    "r": 0.0,
+                    "g": 0.5,
+                    "b": 0.8
+                },
+                "shininess": 100,
+                "specular": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "transparent": true,
+                "opacity": 0.5,
+                "textureref": "water_tex",
+                "texlength_s": 60.0,
+                "texlength_t": 35.0,
+                "twosided": false
+            },
+            "beige_marble": {
+                "color": {
+                    "r": 0.96,
+                    "g": 0.87,
+                    "b": 0.70
+                },
+                "shininess": 5.0,
+                "specular": {
+                    "r": 0.1,
+                    "g": 0.1,
+                    "b": 0.1
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "textureref": "beige_marble_tex",
+                "texlength_s": 0.36,
+                "texlength_t": 1.0,
+                "bumpref": "beige_marble_bumper_tex",
+                "bumpscale": 0.05
+            },
+            "emissive_surface": {
+                "color": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                },
+                "shininess": 100.0,
+                "specular": {
+                    "r": 0.1,
+                    "g": 0.1,
+                    "b": 0.1
+                },
+                "emissive": {
+                    "r": 0.2,
+                    "g": 0.2,
+                    "b": 0.2
+                },
+                "twosided": false,
+                "wireframe": true
+            },
+            "emissive_screen": {
+                "color": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                },
+                "shininess": 10.0,
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "textureref": "television_wallpaper_tex",
+                "texlength_s": 2.0,
+                "texlength_t": 2.0,
+                "twosided": false
+            },
+            "emissive_display": {
+                "color": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                },
+                "shininess": 10.0,
+                "specular": {
+                    "r": 0.1,
+                    "g": 0.1,
+                    "b": 0.1
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "textureref": "treadmill_console_tex",
+                "texlength_s": 5.5,
+                "texlength_t": 3.2,
+                "twosided": false
+            },
+            "white_brick": {
+                "color": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                },
+                "shininess": 10.0,
+                "specular": {
+                    "r": 0.4,
+                    "g": 0.4,
+                    "b": 0.4
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "textureref": "white_bricks_tex",
+                "texlength_s": 1.0,
+                "texlength_t": 1.0,
+                "bumpref": "white_bricks_bumper_tex",
+                "bumpscale": 0.1
+            },
+            "black_plastic": {
+                "color": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 30.0,
+                "specular": {
+                    "r": 0.13,
+                    "g": 0.13,
+                    "b": 0.13
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "twosided": false
+            },
+            "dark_grey_plastic": {
+                "color": {
+                    "r": 0.1,
+                    "g": 0.1,
+                    "b": 0.1
+                },
+                "shininess": 50.0,
+                "specular": {
+                    "r": 0.1,
+                    "g": 0.1,
+                    "b": 0.1
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "twosided": false
+            }
+        },
+        "cameras": {
+            "initial": "cam1",
+            "cam1": {
+                "type": "perspective",
+                "angle": 60.0,
+                "near": 0.1,
+                "far": 1000,
+                "location": {
+                    "x": 40.0,
+                    "y": 10.0,
+                    "z": 30.0
+                },
+                "target": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            "cam2_orth": {
+                "type": "orthogonal",
+                "near": 0.1,
+                "far": 1000.0,
+                "location": {
+                    "x": 0.0,
+                    "y": 50.0,
+                    "z": 0.0
+                },
+                "target": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "left": -20.0,
+                "right": 20.0,
+                "bottom": -20.0,
+                "top": 20.0
+            },
+            "cam3": {
+                "type": "perspective",
+                "angle": 40.0,
+                "near": 0.1,
+                "far": 1000,
+                "location": {
+                    "x": -60.0,
+                    "y": 20.0,
+                    "z": 30.0
+                },
+                "target": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "graph": {
+            "rootid": "scene",
+            "scene": {
+                "type": "node",
+                "children": {
+                    "point_light": {
+                        "type": "pointlight",
+                        "enabled": true,
+                        "color": {
+                            "r": 1.0,
+                            "g": 0.9,
+                            "b": 1.0
+                        },
+                        "intensity": 2.0,
+                        "distance": 100,
+                        "decay": 0.0,
+                        "castshadow": true,
+                        "position": {
+                            "x": 5.0,
+                            "y": 45.0,
+                            "z": 0.0
+                        },
+                        "shadowmapsize": 1024
+                    },
+                    "directional_light":{
+                        "type": "directionallight",
+                        "enabled": true,
+                        "color": {
+                            "r": 0.5,
+                            "g": 0.6,
+                            "b": 0.8
+                        },
+                        "intensity": 2.0,
+                        "position": {
+                            "x": -5.0,
+                            "y": 45.0,
+                            "z": 0.0
+                        },
+                        "castshadow": true,
+                        "shadowmapsize": 1024
+                    },
+                    "spot_light1":{
+                        "type": "spotlight",
+                        "enabled": true,
+                        "color": {
+                            "r": 0.75,
+                            "g": 0.94,
+                            "b": 1.0
+                        },
+                        "intensity": 30.0,
+                        "distance": 42,
+                        "angle": 28.0,
+                        "decay": 0.15,
+                        "penumbra": 0.1,
+                        "position": {
+                            "x": -30.0,
+                            "y": 26.0,
+                            "z": 30.0
+                        },
+                        "target": {
+                            "x": -35,
+                            "y": 0.0,
+                            "z": 25.0
+                        },
+                        "castshadow": true,
+                        "shadowmapsize": 1024
+                    },
+                    "spot_light2": {
+                        "type": "spotlight",
+                        "enabled": true,
+                        "color": {
+                            "r": 0.75,
+                            "g": 0.94,
+                            "b": 1.0
+                        },
+                        "intensity": 60.0,
+                        "distance": 30,
+                        "angle": 40.0,
+                        "decay": 0.4,
+                        "penumbra": 0.1,
+                        "position": {
+                            "x": -50.0,
+                            "y": 20.0,
+                            "z": -13.0
+                        },
+                        "target": {
+                            "x": -30,
+                            "y": 0.0,
+                            "z": -13.0
+                        },
+                        "castshadow": true,
+                        "shadowmapsize": 1024
+                    },
+                    "nodesList": [
+                        "gym",
+                        "partition",
+                        "swimming_pool"
+                    ]
+                }
+            },
+            "gym": {
+                "type": "node",
+                "castshadows": true,
+                "receiveshadows": true,
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -27.5,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "gym_bottom",
+                        "gym_logo",
+                        "bench_press",
+                        "dumbbells",
+                        "television",
+                        "treadmill"
+                    ]
+                }
+            },
+            "gym_bottom": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "gym_floor",
+                        "gym_mat"
+                    ]
+                }
+            },
+            "gym_floor": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 2.75,
+                            "y": 3.5,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -0.001,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "materialref": {
+                    "materialId": "concrete"
+                },
+                "children": {
+                    "rectangleprim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": -10.0,
+                            "y": -10.0
+                        },
+                        "xy2": {
+                            "x": 10.0,
+                            "y": 10.0
+                        }
+                    }
+                }
+            },
+            "gym_mat": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "gym_mat"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 2.5,
+                            "y": 1.0,
+                            "z": 3.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -2.5,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -10.0,
+                            "y": 0.0,
+                            "z": -10.0
+                        },
+                        "xyz2": {
+                            "x": 5.0,
+                            "y": 0.5,
+                            "z": 10.0
+                        }
+                    }
+                }
+            },
+            "gym_logo": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "emissive_surface"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 20.0,
+                            "z": -34.99
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "polygon_1",
+                        "polygon_2",
+                        "polygon_3",
+                        "polygon_4",
+                        "polygon_5",
+                        "polygon_6",
+                        "polygon_7",
+                        "polygon_8",
+                        "polygon_9"
+                    ]
+                }
+            },
+            "polygon_1": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "polygon_obj"
+                    ]
+                }
+            },
+            "polygon_2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -3.4,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "polygon_obj"
+                    ]
+                }
+            },
+            "polygon_3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -3.0,
+                            "y": -5.1,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "polygon_obj"
+                    ]
+                }
+            },
+            "polygon_4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 3.0,
+                            "y": -5.1,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "polygon_obj"
+                    ]
+                }
+            },
+            "polygon_5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -3.0,
+                            "y": -8.5,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "polygon_obj"
+                    ]
+                }
+            },
+            "polygon_6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 3.0,
+                            "y": -8.5,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "polygon_obj"
+                    ]
+                }
+            },
+            "polygon_7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -10.2,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "polygon_obj"
+                    ]
+                }
+            },
+            "polygon_8": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -6.0,
+                            "y": -10.2,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "polygon_obj"
+                    ]
+                }
+            },
+            "polygon_9": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 6.0,
+                            "y": -10.2,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "polygon_obj"
+                    ]
+                }
+            },
+            "polygon_obj": {
+                "type": "node",
+                "children": {
+                    "polygonprim": {
+                        "type": "polygon",
+                        "radius": 2.0,
+                        "stacks": 10.0,
+                        "slices": 6.0,
+                        "color_c": {
+                            "r": 0.38,
+                            "g": 0.83,
+                            "b": 0.98
+                        },
+                        "color_p": {
+                            "r": 1.0,
+                            "g": 0.0,
+                            "b": 0.925
+                        }
+                    }
+                }
+            },
+            "bench_press": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10.0,
+                            "y": 0.0,
+                            "z": -13.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "bench_press_struct",
+                        "rack",
+                        "pad",
+                        "pins",
+                        "barbell"
+                    ]
+                }
+            },
+            "bench_press_struct": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "support_bar",
+                        "support_base"
+                    ]
+                }
+            },
+            "support_bar": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "matte_black_metal"
+                },
+                "children": {
+                    "nodesList": [
+                        "support_bar_fm",
+                        "support_bar_cd",
+                        "support_bar_cu",
+                        "support_bar_cm",
+                        "support_bar_bd",
+                        "support_bar_bu",
+                        "support_bar_bl",
+                        "support_bar_br"
+                    ]
+                }
+            },
+            "support_bar_fm": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 2.25,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 2.0,
+                            "y": 1.625,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_bar_obj"
+                    ]
+                }
+            },
+            "support_bar_cd": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 6.5,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -1.5,
+                            "y": 1.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_bar_obj"
+                    ]
+                }
+            },
+            "support_bar_cu": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 6.5,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -1.5,
+                            "y": 2.5,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_bar_obj"
+                    ]
+                }
+            },
+            "support_bar_cm": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -4.0,
+                            "y": 1.75,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_bar_obj"
+                    ]
+                }
+            },
+            "support_bar_bd": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 5.5,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 1.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_bar_obj"
+                    ]
+                }
+            },
+            "support_bar_bu": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 5.5,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 2.5,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_bar_obj"
+                    ]
+                }
+            },
+            "support_bar_bl": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 4.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 2.5,
+                            "z": 3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_bar_obj"
+                    ]
+                }
+            },
+            "support_bar_br": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 4.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 2.5,
+                            "z": -3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_bar_obj"
+                    ]
+                }
+            },
+            "support_bar_obj": {
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.25,
+                            "y": -0.5,
+                            "z": -0.25
+                        },
+                        "xyz2": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.25
+                        }
+                    }
+                }
+            },
+            "support_base": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "matte_black_metal"
+                },
+                "children": {
+                    "nodesList": [
+                        "support_base_f",
+                        "support_base_l",
+                        "support_base_r"
+                    ]
+                }
+            },
+            "support_base_f": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 90.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 2.2,
+                            "y": 0.535,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_base_obj"
+                    ]
+                }
+            },
+            "support_base_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 0.535,
+                            "z": 3.2
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_base_obj"
+                    ]
+                }
+            },
+            "support_base_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 0.535,
+                            "z": -3.2
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "support_base_obj"
+                    ]
+                }
+            },
+            "support_base_obj": {
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.3,
+                            "y": -0.0375,
+                            "z": -0.5
+                        },
+                        "xyz2": {
+                            "x": 0.3,
+                            "y": 0.0375,
+                            "z": 0.5
+                        }
+                    }
+                }
+            },
+            "rack": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "metal"
+                },
+                "children": {
+                    "nodesList": [
+                        "rack_l_component1",
+                        "rack_l_component2",
+                        "rack_l_component3",
+                        "rack_l_component4",
+                        "rack_r_component1",
+                        "rack_r_component2",
+                        "rack_r_component3",
+                        "rack_r_component4"
+                    ]
+                }
+            },
+            "rack_l_component1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 5.0,
+                            "z": 3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "rack_obj"
+                    ]
+                }
+            },
+            "rack_l_component2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.25,
+                            "y": 0.075,
+                            "z": 1.25
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 5.5,
+                            "z": 3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "rack_obj"
+                    ]
+                }
+            },
+            "rack_l_component3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.75,
+                            "y": 0.075,
+                            "z": 1.25
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 45.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -4.67,
+                            "y": 5.595,
+                            "z": 3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "rack_obj"
+                    ]
+                }
+            },
+            "rack_l_component4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.2,
+                            "y": 1.25,
+                            "z": 1.25
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.275,
+                            "y": 6.0875,
+                            "z": 3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "rack_obj"
+                    ]
+                }
+            },
+            "rack_r_component1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 5.0,
+                            "z": -3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "rack_obj"
+                    ]
+                }
+            },
+            "rack_r_component2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.25,
+                            "y": 0.075,
+                            "z": 1.25
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 5.5,
+                            "z": -3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "rack_obj"
+                    ]
+                }
+            },
+            "rack_r_component3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.75,
+                            "y": 0.075,
+                            "z": 1.25
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 45.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -4.67,
+                            "y": 5.595,
+                            "z": -3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "rack_obj"
+                    ]
+                }
+            },
+            "rack_r_component4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.2,
+                            "y": 1.25,
+                            "z": 1.25
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.275,
+                            "y": 6.0875,
+                            "z": -3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "rack_obj"
+                    ]
+                }
+            },
+            "rack_obj": {
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.2,
+                            "y": -0.5,
+                            "z": -0.2
+                        },
+                        "xyz2": {
+                            "x": 0.2,
+                            "y": 0.5,
+                            "z": 0.2
+                        }
+                    }
+                }
+            },
+            "pad": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "brown_leather"
+                },
+                "children": {
+                    "nodesList": [
+                        "pad_main_obj",
+                        "pad_aux_obj"
+                    ]
+                }
+            },
+            "pad_main_obj": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -1.25,
+                            "y": 3.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -3.75,
+                            "y": -0.25,
+                            "z": -1.25
+                        },
+                        "xyz2": {
+                            "x": 3.75,
+                            "y": 0.25,
+                            "z": 1.25
+                        }
+                    }
+                }
+            },
+            "pad_aux_obj": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 3.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 1.25,
+                        "top": 1.25,
+                        "height": 0.5,
+                        "slices": 50,
+                        "stacks": 10,
+                        "capsclose": true,
+                        "thetastart": 180.0,
+                        "thetalength": 180.0
+                    }
+                }
+            },
+            "pins": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "pin_l",
+                        "pin_r"
+                    ]
+                }
+            },
+            "pin_l": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "pin_l_body",
+                        "pin_l_neck",
+                        "pin_l_cap_base",
+                        "pin_l_cap"
+                    ]
+                }
+            },
+            "pin_l_body": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "matte_black_metal"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.335,
+                            "y": 4.3,
+                            "z": 3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "pin_cylinder_obj"
+                    ]
+                }
+            },
+            "pin_l_neck": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "yellow_plastic"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.75,
+                            "y": 0.3,
+                            "z": 0.75
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.445,
+                            "y": 4.3,
+                            "z": 3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "pin_cylinder_obj"
+                    ]
+                }
+            },
+            "pin_l_cap_base": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "yellow_plastic"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.4725,
+                            "y": 4.3,
+                            "z": 3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "pin_cap_base_obj"
+                    ]
+                }
+            },
+            "pin_l_cap": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "yellow_plastic"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.4475,
+                            "y": 4.3,
+                            "z": 3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "pin_cap_obj"
+                    ]
+                }
+            },
+            "pin_r": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "pin_r_body",
+                        "pin_r_neck",
+                        "pin_r_cap_base",
+                        "pin_r_cap"
+                    ]
+                }
+            },
+            "pin_r_body": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "matte_black_metal"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.335,
+                            "y": 4.3,
+                            "z": -3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "pin_cylinder_obj"
+                    ]
+                }
+            },
+            "pin_r_neck": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "yellow_plastic"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.75,
+                            "y": 0.3,
+                            "z": 0.75
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.445,
+                            "y": 4.3,
+                            "z": -3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "pin_cylinder_obj"
+                    ]
+                }
+            },
+            "pin_r_cap_base": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "yellow_plastic"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.4725,
+                            "y": 4.3,
+                            "z": -3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "pin_cap_base_obj"
+                    ]
+                }
+            },
+            "pin_r_cap": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "yellow_plastic"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.4475,
+                            "y": 4.3,
+                            "z": -3.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "pin_cap_obj"
+                    ]
+                }
+            },
+            "pin_cylinder_obj": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.05,
+                        "top": 0.05,
+                        "height": 0.175,
+                        "slices": 25,
+                        "stacks": 10,
+                        "capsclose": true
+                    }
+                }
+            },
+            "pin_cap_base_obj": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.07,
+                        "top": 0.07,
+                        "height": 0.001,
+                        "slices": 25,
+                        "stacks": 1,
+                        "capsclose": true
+                    }
+                }
+            },
+            "pin_cap_obj": {
+                "type": "node",
+                "children": {
+                    "sphereprim": {
+                        "type": "sphere",
+                        "radius": 0.075,
+                        "slices": 25,
+                        "stacks": 10,
+                        "thetastart": 0.0,
+                        "thetalength": 72.0,
+                        "phistart": 0.0,
+                        "philength": 360.0
+                    }
+                }
+            },
+            "barbell": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 5.6875,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "barbell_component",
+                        "weight_plates"
+                    ]
+                }
+            },
+            "barbell_component": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "metal"
+                },
+                "children": {
+                    "nodesList": [
+                        "barbell_component_m",
+                        "barbell_component_ml",
+                        "barbell_component_mr",
+                        "barbell_component_l",
+                        "barbell_component_r"
+                    ]
+                }
+            },
+            "barbell_component_m": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 38.0,
+                            "z": 1.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "barbell_obj"
+                    ]
+                }
+            },
+            "barbell_component_ml": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 2.0,
+                            "y": 1.0,
+                            "z": 2.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -3.9,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "barbell_obj"
+                    ]
+                }
+            },
+            "barbell_component_mr": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 2.0,
+                            "y": 1.0,
+                            "z": 2.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 3.9,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "barbell_obj"
+                    ]
+                }
+            },
+            "barbell_component_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.3,
+                            "y": 12.0,
+                            "z": 1.3
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -5.2,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "barbell_obj"
+                    ]
+                }
+            },
+            "barbell_component_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.3,
+                            "y": 12.0,
+                            "z": 1.3
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 5.2,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "barbell_obj"
+                    ]
+                }
+            },
+            "barbell_obj": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.15,
+                        "top": 0.15,
+                        "height": 0.2,
+                        "slices": 25,
+                        "stacks": 10,
+                        "capsclose": true
+                    }
+                }
+            },
+            "weight_plates": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "rubber"
+                },
+                "children": {
+                    "nodesList": [
+                        "weight_l_l",
+                        "weight_l_m",
+                        "weight_l_s",
+                        "weight_r_l",
+                        "weight_r_m",
+                        "weight_r_s"
+                    ]
+                }
+            },
+            "weight_l_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 2.0,
+                            "y": 1.0,
+                            "z": 2.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -4.175,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "weight_l_m": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.5,
+                            "y": 1.0,
+                            "z": 1.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -4.52,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "weight_l_s": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -4.845,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "weight_r_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 2.0,
+                            "y": 1.0,
+                            "z": 2.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 4.175,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "weight_r_m": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.5,
+                            "y": 1.0,
+                            "z": 1.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 4.52,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "weight_r_s": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 4.845,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "weight_obj": {
+                "type": "node",
+                "children": {
+                    "lodsList": [
+                        "cylinder_lod"
+                    ]
+                }
+            },
+            "cylinder_lod": {
+                "type": "lod",
+                "lodNodes": [{
+                    "nodeId": "cylinder_lod_0",
+                    "mindist": 0.0
+                },
+                {
+                    "nodeId": "cylinder_lod_1",
+                    "mindist": 15.0
+                },
+                {
+                    "nodeId": "cylinder_lod_2",
+                    "mindist": 25.0
+                   
+                }]
+            },
+            "cylinder_lod_0": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.7,
+                        "top": 0.7,
+                        "height": 0.35,
+                        "slices": 50,
+                        "stacks": 10,
+                        "capsclose": true
+                    }
+                }
+            },
+            "cylinder_lod_1": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.7,
+                        "top": 0.7,
+                        "height": 0.35,
+                        "slices": 15,
+                        "stacks": 10,
+                        "capsclose": true
+                    }
+                }
+            },
+            "cylinder_lod_2": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.7,
+                        "top": 0.7,
+                        "height": 0.35,
+                        "slices": 8,
+                        "stacks": 5,
+                        "capsclose": true
+                    }
+                }
+            },
+            "dumbbells": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 1.2,
+                            "z": -13.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "dumbbell_l",
+                        "dumbbell_r"
+                    ]
+                }
+            },
+            "dumbbell_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 60.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 2.5,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "dumbbell_l_bar",
+                        "dumbbell_l_weight_l",
+                        "dumbbell_l_weight_r"
+                    ]
+                }
+            },
+            "dumbbell_l_bar": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "metal"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.25,
+                            "y": 9.0,
+                            "z": 1.25
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "barbell_obj"
+                    ]
+                }
+            },
+            "dumbbell_l_weight_l": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "rubber"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 2.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 1.25,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "dumbbell_l_weight_r": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "rubber"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 2.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -1.25,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "dumbbell_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -60.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -2.5,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "dumbbell_r_bar",
+                        "dumbbell_r_weight_l",
+                        "dumbbell_r_weight_r"
+                    ]
+                }
+            },
+            "dumbbell_r_bar": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "metal"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.25,
+                            "y": 9.0,
+                            "z": 1.25
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "barbell_obj"
+                    ]
+                }
+            },
+            "dumbbell_r_weight_l": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "rubber"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 2.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 1.25,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "dumbbell_r_weight_r": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "rubber"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 2.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -1.25,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "weight_obj"
+                    ]
+                }
+            },
+            "television":{
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.2,
+                            "y": 1.2,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -9.0,
+                            "y": 23.0,
+                            "z": 34.5
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "television_screen",
+                        "television_frames",
+                        "television_back_surface"
+                    ]
+                }
+            },
+            "television_screen": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 7.68,
+                            "y": 4.32,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 180.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.05
+                        }
+                    }
+                ],
+                "materialref": {
+                    "materialId": "emissive_screen"
+                },
+                "children": {
+                    "rectangleprim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": -1.0,
+                            "y": -1.0
+                        },
+                        "xy2": {
+                            "x": 1.0,
+                            "y": 1.0
+                        }
+                    }
+                }
+            },
+            "television_frames": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "black_plastic"
+                },
+                "children": {
+                    "nodesList": [
+                        "television_frame_u",
+                        "television_frame_l",
+                        "television_frame_r",
+                        "television_frame_d"
+                    ]
+                }
+            },
+            "television_frame_u": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 31.2,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 4.35,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "television_box_obj"
+                    ]
+                }
+            },
+            "television_frame_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.5,
+                            "y": 17.25,
+                            "z": 0.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 7.675,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "television_box_obj"
+                    ]
+                }
+            },
+            "television_frame_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.5,
+                            "y": 17.25,
+                            "z": 0.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -7.675,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "television_box_obj"
+                    ]
+                }
+            },
+            "television_frame_d": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 31.2,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -4.35,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "television_box_obj"
+                    ]
+                }
+            },
+            "television_back_surface": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "black_plastic"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 30.75,
+                            "y": 17.25,
+                            "z": 0.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.26
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "television_box_obj"
+                    ]
+                }
+            },
+            "television_box_obj": {
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.25,
+                            "y": -0.25,
+                            "z": -0.25
+                        },
+                        "xyz2": {
+                            "x": 0.25,
+                            "y": 0.25,
+                            "z": 0.25
+                        }
+                     }
+                }
+            },
+            "treadmill": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.65,
+                            "y": 0.65,
+                            "z": 0.65
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -9.0,
+                            "y": 1.0,
+                            "z": 25.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "treadmill_structure",
+                        "treadmill_handrails",
+                        "treadmill_belt",
+                        "treadmill_display"
+                    ]
+                }
+            },
+            "treadmill_structure": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "side_rails",
+                        "endcaps",
+                        "motor_cover",
+                        "rollers",
+                        "upright_columns",
+                        "console"
+                    ]
+                }
+            },
+            "side_rails": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "matte_black_metal"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.75,
+                            "y": 2.0,
+                            "z": 33.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -1.3
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "side_rail_l",
+                        "side_rail_r"
+                    ]
+                }
+            },
+            "side_rail_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 2.25,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "treadmill_support_bar_obj"
+                    ]
+                }
+            },
+            "side_rail_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -2.25,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "treadmill_support_bar_obj"
+                    ]
+                }
+            },
+            "treadmill_support_bar_obj": {
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.25,
+                            "y": -0.25,
+                            "z": -0.25
+                        },
+                        "xyz2": {
+                            "x": 0.25,
+                            "y": 0.25,
+                            "z": 0.25
+                        }
+                    }
+                }
+            },
+            "endcaps": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "dark_grey_plastic"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 3.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -9.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "endcap_l",
+                        "endcap_r"
+                    ]
+                }
+            },
+            "endcap_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -3.945,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "endcap_obj"
+                    ]
+                }
+            },
+            "endcap_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 3.945,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "endcap_obj"
+                    ]
+                }
+            },
+            "endcap_obj": {
+                "type": "node",
+                "children": {
+                    "lodsList": [
+                        "endcap_lod"
+                    ]
+                }
+            },
+            "endcap_lod":{
+                "type": "lod",
+                "lodNodes": [
+                    {
+                        "nodeId": "endcap_lod0",
+                        "mindist": 0.0
+                    },
+                    {
+                        "nodeId": "endcap_lod1",
+                        "mindist": 10.0
+                    },
+                    {
+                        "nodeId": "endcap_lod2",
+                        "mindist": 20.0
+                    }
+                ]
+            },
+            "endcap_lod0": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.6,
+                        "top": 0.6,
+                        "height": 1.0,
+                        "slices": 40,
+                        "stacks": 20,
+                        "capsclose": true,
+                        "thetastart": 90.0,
+                        "thetalength": 180.0
+                    }
+                }
+            },
+            "endcap_lod1": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.6,
+                        "top": 0.6,
+                        "height": 1.0,
+                        "slices": 10,
+                        "stacks": 5,
+                        "capsclose": true,
+                        "thetastart": 90.0,
+                        "thetalength": 180.0
+                    }
+                }
+            },
+            "endcap_lod2": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.6,
+                        "top": 0.6,
+                        "height": 1.0,
+                        "slices": 5,
+                        "stacks": 3,
+                        "capsclose": true,
+                        "thetastart": 90.0,
+                        "thetalength": 180.0
+                    }
+                }
+            },
+            "motor_cover": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "dark_grey_plastic"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.3,
+                            "y": 1.0,
+                            "z": 2.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.5,
+                            "z": 8.0
+                        }
+                    }
+                ],
+                "children": {
+                    "lodsList": [
+                        "motor_cover_lod"
+                    ]
+                }
+            },
+            "motor_cover_lod":{
+                "type": "lod",
+                "lodNodes": [
+                    {
+                        "nodeId": "motor_cover_lod0",
+                        "mindist": 0.0
+                    },
+                    {
+                        "nodeId": "motor_cover_lod1",
+                        "mindist": 20.0
+                    },
+                    {
+                        "nodeId": "motor_cover_lod2",
+                        "mindist": 40.0
+                    }
+                ]
+            },
+            "motor_cover_lod0": {
+                "type": "node",
+                "children": {
+                   "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 1.0,
+                        "top": 1.0,
+                        "height": 10.0,
+                        "slices": 40,
+                        "stacks": 20,
+                        "capsclose": true
+                    }
+                }
+            },
+            "motor_cover_lod1": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 1.0,
+                        "top": 1.0,
+                        "height": 10.0,
+                        "slices": 20,
+                        "stacks": 5,
+                        "capsclose": true
+                    }
+                }
+            },
+            "motor_cover_lod2": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 1.0,
+                        "top": 1.0,
+                        "height": 10.0,
+                        "slices": 10,
+                        "stacks": 3,
+                        "capsclose": true
+                    }
+                }
+            },
+            "rollers": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "metal"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "roller_f",
+                        "roller_b"
+                    ]
+                }
+            },
+            "roller_f": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 5.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "roller_obj"
+                    ]
+                }
+            },
+            "roller_b": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -9.5
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "roller_obj"
+                    ]
+                }
+            },
+            "roller_obj": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.3,
+                        "top": 0.3,
+                        "height": 7.0,
+                        "slices": 25,
+                        "stacks": 10,
+                        "capsclose": true
+                    }
+                }
+            },
+            "upright_columns": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 2.0,
+                            "z": 20.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 80.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 6.0,
+                            "z": 6.0
+                        }
+                    }
+                ],
+                "materialref": {
+                    "materialId": "matte_black_metal"
+                },
+                "children": {
+                    "nodesList": [
+                        "upright_column_l",
+                        "upright_column_r"
+                    ]
+                }
+            },
+            "upright_column_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 4.5,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "treadmill_support_bar_obj"
+                    ]
+                }
+            },
+            "upright_column_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -4.5,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "treadmill_support_bar_obj"
+                    ]
+                }
+            },
+            "console": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "dark_grey_plastic"
+                },
+                "children": {
+                    "nodesList": [
+                        "console_b",
+                        "console_t",
+                        "console_l",
+                        "console_r"
+                    ]
+                }
+            },
+            "console_b": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 20.0,
+                            "y": 1.75,
+                            "z": 8.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -35.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 11.75,
+                            "z": 6.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "console_obj_1"
+                    ]
+                }
+            },
+            "console_t": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 13.0,
+                            "y": 2.25,
+                            "z": 8.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -40.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 12.5,
+                            "z": 6.25
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "console_obj_1"
+                    ]
+                }
+            },
+            "console_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.7,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -35.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 5.0,
+                            "y": 11.75,
+                            "z": 6.0
+                        }
+                    }
+                ],
+                "children": {
+                    "lodsList": [
+                        "console_obj_2"
+                    ]
+                }
+            },
+            "console_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.7,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -35.0,
+                            "y": 180.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5.0,
+                            "y": 11.75,
+                            "z": 6.0
+                        }
+                    }
+                ],
+                "children": {
+                    "lodsList": [
+                        "console_obj_2"
+                    ]
+                }
+            },
+            "console_obj_1": {
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.25,
+                            "y": -0.25,
+                            "z": -0.25
+                        },
+                        "xyz2": {
+                            "x": 0.25,
+                            "y": 0.25,
+                            "z": 0.25
+                        }
+                    }
+                }
+            },
+            "console_obj_2": {
+                "type": "lod",
+                "lodNodes": [
+                    {
+                        "nodeId": "console_obj_2_0",
+                        "mindist": 0.0
+                    },
+                    {
+                        "nodeId": "console_obj_2_1",
+                        "mindist": 25.0
+                    },
+                    {
+                        "nodeId": "console_obj_2_2",
+                        "mindist": 40.0
+                    }
+                ]
+            },
+            "console_obj_2_0":{
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 2.0,
+                        "top": 2.0,
+                        "height": 0.878,
+                        "slices": 20,
+                        "stacks": 15,
+                        "capsclose": true,
+                        "thetastart": 0.0,
+                        "thetalength": 180.0
+                    }
+                }
+            },
+            "console_obj_2_1":{
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 2.0,
+                        "top": 2.0,
+                        "height": 0.878,
+                        "slices": 7,
+                        "stacks": 5,
+                        "capsclose": true,
+                        "thetastart": 0.0,
+                        "thetalength": 180.0
+                    }
+                }    
+            },
+            "console_obj_2_2":{
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 2.0,
+                        "top": 2.0,
+                        "height": 0.878,
+                        "slices": 3,
+                        "stacks": 3,
+                        "capsclose": true,
+                        "thetastart": 0.0,
+                        "thetalength": 180.0
+                    }
+                }
+            },
+            "treadmill_handrails": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "rubber"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 10.6,
+                            "z": 1.9
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "treadmill_handrail_l",
+                        "treadmill_handrail_r"
+                    ]
+                }
+            },
+            "treadmill_handrail_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 3.85,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "lodsList": [
+                        "treadmill_handrail_obj"
+                    ]
+                }
+            },
+            "treadmill_handrail_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -3.85,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "lodsList": [
+                        "treadmill_handrail_obj"
+                    ]
+                }
+            },
+            "treadmill_handrail_obj": {
+                "type": "lod",
+                "lodNodes": [{
+                    "nodeId": "treadmill_handrail_obj_0",
+                    "mindist": 0.0
+                },
+                {
+                    "nodeId": "treadmill_handrail_obj_1",
+                    "mindist": 5.0
+                },
+                {
+                    "nodeId": "treadmill_handrail_obj_2",
+                    "mindist": 10.0
+                }]
+            },
+            "treadmill_handrail_obj_0": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.3,
+                        "top": 0.3,
+                        "height": 5.25,
+                        "slices": 25,
+                        "stacks": 10,
+                        "capsclose": true
+                    }
+                }
+            },
+            "treadmill_handrail_obj_1": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.3,
+                        "top": 0.3,
+                        "height": 5.25,
+                        "slices": 15,
+                        "stacks": 5,
+                        "capsclose": true
+                    }
+                }
+            },
+            "treadmill_handrail_obj_2": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.3,
+                        "top": 0.3,
+                        "height": 5.25,
+                        "slices": 10,
+                        "stacks": 3,
+                        "capsclose": true
+                    }
+                }
+            },
+            "treadmill_belt": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "rubber"
+                },
+                "children": {
+                    "nodesList": [
+                        "treadmill_belt_component_u",
+                        "treadmill_belt_component_c",
+                        "treadmill_belt_component_d"
+                    ]
+                }
+            },
+            "treadmill_belt_component_u": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.35,
+                            "z": -1.6
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "treadmill_belt_obj_1"
+                    ]
+                }
+            },
+            "treadmill_belt_component_c": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -9.6
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "treadmill_belt_obj_2"
+                    ]
+                }
+            },
+            "treadmill_belt_component_d": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -0.35,
+                            "z": -1.6
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "treadmill_belt_obj_1"
+                    ]
+                }
+            },
+            "treadmill_belt_obj_1": {
+                "type": "node",
+                "children": {
+                    "rectangleprim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": -3.3,
+                            "y": -8.0
+                        },
+                        "xy2": {
+                            "x": 3.3,
+                            "y": 8.0
+                        }
+                    }
+                }
+            },
+            "treadmill_belt_obj_2": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.35,
+                        "top": 0.35,
+                        "height": 6.6,
+                        "slices": 25,
+                        "stacks": 10,
+                        "capsclose": false,
+                        "thetastart": 90.0,
+                        "thetalength": 180.0
+                    }
+                }
+            },
+            "treadmill_display": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "emissive_display"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -130.0,
+                            "y": 0.0,
+                            "z": 180.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 13.05,
+                            "z": 6.0
+                        }
+                    }
+                ],
+                "children": {
+                    "rectangleprim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": -2.7,
+                            "y": -1.6
+                        },
+                        "xy2": {
+                            "x": 2.7,
+                            "y": 1.6
+                        }
+                    }
+                }
+            },
+            "partition": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "dark_grey_tinted_glass"
+                },
+                "children": {
+                    "nodesList": [
+                        "glass_walls",
+                        "glass_door",
+                        "brick_wall"
+                    ]
+                }
+            },
+            "glass_walls": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "glass_wall_t",
+                        "glass_wall_l",
+                        "glass_wall_r"
+                    ]
+                }
+            },
+            "glass_wall_t": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 5.0,
+                            "z": 15.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 17.5,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "glass_panel"
+                    ]
+                }
+            },
+            "glass_wall_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 20.0,
+                            "z": 62.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 10.0,
+                            "z": 19.35
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "glass_panel"
+                    ]
+                }
+            },
+            "glass_wall_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 20.0,
+                            "z": 62.5
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 10.0,
+                            "z": -19.35
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "glass_panel"
+                    ]
+                }
+            },
+            "glass_door": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -75.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 3.4,
+                            "y": 0.0,
+                            "z": 2.5
+                        }
+                    }
+                ],
+                "children": {
+                    "lodsList": [
+                         "door_lod"
+                    ]
+                }
+            },
+            "door_lod": {
+                "type": "lod",
+                "lodNodes": [
+                    {
+                        "nodeId": "door_detailed",
+                        "mindist": 0.0
+                    },
+                    {
+                        "nodeId": "door_simplified",
+                        "mindist": 75.0
+                    }
+                ]
+            },
+            "door_detailed":{
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "glass_door_body",
+                        "glass_door_handles"
+                    ]
+                }
+            },
+            "door_simplified":{
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "glass_door_body",
+                        "glass_door_handles_simplified"
+                    ]
+                }
+            },
+            "glass_door_handles_simplified":{
+                "type": "node",
+                "materialref": {
+                    "materialId": "metal"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 8.0,
+                            "z": -2.75
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_simplified_l",
+                        "door_handle_simplified_r"
+                    ]
+                }
+            },
+            "door_handle_simplified_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.4,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_simplified_prim"
+                    ]
+                }
+            },
+            "door_handle_simplified_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -0.4,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_simplified_prim"
+                    ]
+                }
+            },
+            "door_handle_simplified_prim":{
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.15,
+                            "y": -1.0,
+                            "z": -0.15
+                        },
+                        "xyz2": {
+                            "x": 0.15,
+                            "y": 1.0,
+                            "z": 0.15
+                        }
+                    }
+                }
+            },
+            "glass_door_body": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 15.0,
+                            "z": 15.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 7.5,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "glass_panel"
+                    ]
+                } 
+            },
+            "glass_panel": {
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.25,
+                            "y": -0.5,
+                            "z": -0.25
+                        },
+                        "xyz2": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.25
+                        }
+                     }
+                }
+            },
+            "glass_door_handles": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "metal"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 8.0,
+                            "z": -2.75
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_sp",
+                        "door_handle_g"
+                    ]
+                }
+            },
+            "door_handle_sp": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "door_handle_sp_support_d",
+                        "door_handle_sp_support_t",
+                        "door_handle_sp_bar"
+                    ]
+                }
+            },
+            "door_handle_sp_support_d": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -0.675,
+                            "y": -1.25,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_support"
+                    ]
+                }
+            },
+            "door_handle_sp_support_t": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -0.675,
+                            "y": 1.25,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_support"
+                    ]
+                }
+            },
+            "door_handle_sp_bar": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 1.3,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_bar"
+                    ]
+                }
+            },
+            "door_handle_g": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "door_handle_g_support_d",
+                        "door_handle_g_support_t",
+                        "door_handle_g_bar"
+                    ]
+                }
+            },
+            "door_handle_g_support_d": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.675,
+                            "y": -1.25,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_support"
+                    ]
+                }
+            },
+            "door_handle_g_support_t": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.675,
+                            "y": 1.25,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_support"
+                    ]
+                }
+            },
+            "door_handle_g_bar": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -1.3,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "door_handle_bar"
+                    ]
+                }
+            },
+            "door_handle_support": {
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.425,
+                            "y": -0.135,
+                            "z": -0.135
+                        },
+                        "xyz2": {
+                            "x": 0.425,
+                            "y": 0.135,
+                            "z": 0.135
+                        }
+                    }
+                }
+            },
+            "door_handle_bar": {
+                "type": "node",
+                "children": {
+                    "cylinderprim": {
+                        "type": "cylinder",
+                        "base": 0.25,
+                        "top": 0.25,
+                        "height": 3.75,
+                        "slices": 30,
+                        "stacks": 10,
+                        "capsclose": true
+                    }
+                }
+            },
+            "brick_wall": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "white_brick"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1.0,
+                            "y": 50.0,
+                            "z": 46.75
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 32.5,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.75,
+                            "y": -0.25,
+                            "z": -0.75
+                        },
+                        "xyz2": {
+                            "x": 0.75,
+                            "y": 0.25,
+                            "z": 0.75
+                        }
+                    }
+                }
+            },
+            "swimming_pool": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 55.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "swimming_pool_floor",
+                        "swimming_pool_borders",
+                        "water_plane"
+                    ]
+                }
+            },
+            "swimming_pool_floor": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basalt"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 5.5,
+                            "y": 3.5,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": -0.001,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "rectangleprim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": -10.0,
+                            "y": -10.0
+                        },
+                        "xy2": {
+                            "x": 10.0,
+                            "y": 10.0
+                        }
+                    }
+                }
+            },
+            "swimming_pool_borders": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "beige_marble"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.25,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "swimming_pool_border_f",
+                        "swimming_pool_border_l",
+                        "swimming_pool_border_r",
+                        "swimming_pool_border_b"
+                    ]
+                }
+            },
+            "swimming_pool_border_f": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 43.0,
+                            "y": 1.0,
+                            "z": 4.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 90.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -32.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "swimming_pool_border_obj"
+                    ]
+                }
+            },
+            "swimming_pool_border_l": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 60.0,
+                            "y": 1.0,
+                            "z": 4.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 19.5
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "swimming_pool_border_obj"
+                    ]
+                }
+            },
+            "swimming_pool_border_r": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 60.0,
+                            "y": 1.0,
+                            "z": 4.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -19.5
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "swimming_pool_border_obj"
+                    ]
+                }
+            },
+            "swimming_pool_border_b": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 43.0,
+                            "y": 1.0,
+                            "z": 4.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 90.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 32.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "swimming_pool_border_obj"
+                    ]
+                }
+            },
+            "swimming_pool_border_obj": {
+                "type": "node",
+                "children": {
+                    "boxprim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -0.5,
+                            "y": -0.25,
+                            "z": -0.5
+                        },
+                        "xyz2": {
+                            "x": 0.5,
+                            "y": 0.25,
+                            "z": 0.5
+                        }
+                     }
+                }
+            },
+            "water_plane": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 3.0,
+                            "y": 1.75,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -90.0,
+                            "y": 0.001,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 0.1,
+                            "z": 0.0
+                        }
+                    }
+                ],
+                "materialref": {
+                    "materialId": "water"
+                },
+                "children": {
+                    "rectangleprim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": -10.0,
+                            "y": -10.0
+                        },
+                        "xy2": {
+                            "x": 10.0,
+                            "y": 10.0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

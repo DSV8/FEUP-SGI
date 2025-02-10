@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SGI Hello world TP2</title>
+
+    <link rel="shortcut icon" href="image/favicon/3d.png" />
+    <link rel="stylesheet" href="styles.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.156.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.156.1/examples/jsm/"
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+    <div id="canvas"></div>
+    <div id="camera"></div>
+    <script type="module" src="main.js"></script>
+
+    <div id="pauseOverlay" style="display: none;">
+      <div class="pauseText">Paused</div>
+    </div>
+
+    <div id="windVisual">
+      <div class="arrow-box" id="upArrowBox" style="display: none;">
+        <div class="arrow" id="upArrow">&uarr;</div>
+      </div>
+      <div class="arrow-box" id="rightArrowBox" style="display: none;">
+        <div class="arrow" id="rightArrow">&rarr;</div>
+      </div>
+      <div class="arrow-box" id="downArrowBox" style="display: none;">
+        <div class="arrow" id="downArrow">&darr;</div>
+      </div>
+      <div class="arrow-box" id="leftArrowBox" style="display: none;">
+        <div class="arrow" id="leftArrow">&larr;</div>
+      </div>
+    </div>
+
+    <div id="pickingInstructions" style="display: none;">
+      <div id="your_balloon" style="display: none;">Pick your balloon on the right (Right Click to Select and Enter to Confirm)</div>
+      <div id="opp_balloon" style="display: none;">Pick the opponent balloon on the left (Right Click to Select and Enter to Confirm)</div>
+      <div id="starting_point" style="display: none;">Pick the starting point (shadows on the starting line)</div>
+      <div id="enter" style="display: none;">Press Enter to start the game</div>
+    </div>
+
+</body>
+
+</html>
